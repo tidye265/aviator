@@ -12,7 +12,7 @@ export default function Header() {
 
   const Refound = async () => {
       setTimeout(() => {
-        window.open("https://induswin.com/#/", "_self");
+        window.open("https://www.tidye265.com/#/", "_self");
       }, 1000)
   }
 
@@ -56,7 +56,7 @@ export default function Header() {
             <div className="modal-body m-body-bg">
               <div className="youtube">
                 <div className="embed-responsive">
-                  <iframe title="tutorial" className="embed-responsive-item" src="https://www.youtube.com/embed/PZejs3XDCSY?playsinline=1" />
+                  <iframe title="tutorial" className="embed-responsive-item"/>
                   {/* <iframe className="embed-responsive-item" src="https://www.youtube.com/watch?v=bBeZSuHI4Qc" /> */}
                 </div>
               </div>
