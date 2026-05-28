@@ -3,5 +3,6 @@ export const config = {
   debug: true,
   appKey: "crash-0.1.0",
   api: `${process.env.REACT_APP_API_URL}/api`,
-  wss: process.env.REACT_APP_API_URL as string,
+  // Sinthani mzerewu kukhala URL ya server yanu ya Hugging Face
+  wss: "https://moskonx-tidye-shooter-game-server.hf.space", 
 };
