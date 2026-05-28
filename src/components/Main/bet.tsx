@@ -9,7 +9,7 @@ interface BetProps {
 	setAdd: any
 }
 type FieldNameType = 'betAmount' | 'decrease' | 'increase' | 'singleAmount'
-type BetOptType = '20' | '50' | '100' | '1000'
+type BetOptType = '80' | '160' | '1600' | '8000'
 type GameType = 'manual' | 'auto'
 
 const Bet = ({ index, add, setAdd }: BetProps) => {
@@ -252,31 +252,31 @@ const Bet = ({ index, add, setAdd }: BetProps) => {
 						{betState || betted ?
 							<div className="bet-opt-list">
 								<button className="bet-opt disabled">
-									<span>20</span>
+									<span>80</span>
 								</button>
 								<button className="bet-opt disabled">
-									<span>50</span>
+									<span>160</span>
 								</button>
 								<button className="bet-opt disabled">
-									<span>100</span>
+									<span>1600</span>
 								</button>
 								<button className="bet-opt disabled">
-									<span>1000</span>
+									<span>8000</span>
 								</button>
 							</div>
 							:
 							<div className="bet-opt-list">
-								<button onClick={() => manualPlus(20, "20")} className="bet-opt">
-									<span>20</span>
+								<button onClick={() => manualPlus(80, "80")} className="bet-opt">
+									<span>80</span>
 								</button>
-								<button onClick={() => manualPlus(50, "50")} className="bet-opt">
-									<span>50</span>
+								<button onClick={() => manualPlus(160, "160")} className="bet-opt">
+									<span>160</span>
 								</button>
-								<button onClick={() => manualPlus(100, "100")} className="bet-opt">
-									<span>100</span>
+								<button onClick={() => manualPlus(1600, "1600")} className="bet-opt">
+									<span>1600</span>
 								</button>
-								<button onClick={() => manualPlus(1000, "1000")} className="bet-opt">
-									<span>1000</span>
+								<button onClick={() => manualPlus(8000, "8000")} className="bet-opt">
+									<span>8000</span>
 								</button>
 							</div>
 						}
@@ -288,7 +288,7 @@ const Bet = ({ index, add, setAdd }: BetProps) => {
 									<label>CASHOUT</label>
 									<label className="amount">
 										<span>{Number(betAmount * currentTarget).toFixed(2)}</span>
-										<span className="currency">INR</span>
+										<span className="currency">MWK</span>
 									</label>
 								</span>
 							</button>
@@ -305,7 +305,7 @@ const Bet = ({ index, add, setAdd }: BetProps) => {
 									<label>BET</label>
 									<label className="amount">
 										<span>{Number(betAmount).toFixed(2)}</span>
-										<span className="currency">INR</span>
+										<span className="currency">MWK</span>
 									</label>
 								</span>
 							</button>
@@ -380,19 +380,19 @@ const Bet = ({ index, add, setAdd }: BetProps) => {
 									<div className="rounds-wrap">
 										<button
 											className={`btn-secondary ${autoCound === 10 ? "onClick" : ""}`}
-											onClick={() => setCount(10)}>
-											10</button>
+											onClick={() => setCount(80)}>
+											80</button>
 										<button
 											className={`btn-secondary ${autoCound === 20 ? "onClick" : ""}`}
-											onClick={() => setCount(20)}>
+											onClick={() => setCount(160)}>
 											20</button>
 										<button
 											className={`btn-secondary ${autoCound === 50 ? "onClick" : ""}`}
-											onClick={() => setCount(50)}>
+											onClick={() => setCount(1600)}>
 											50</button>
 										<button
 											className={`btn-secondary ${autoCound === 100 ? "onClick" : ""}`}
-											onClick={() => setCount(100)}>
+											onClick={() => setCount(8000)}>
 											100</button>
 									</div>
 								</div>
@@ -508,7 +508,7 @@ const Bet = ({ index, add, setAdd }: BetProps) => {
 											</div>
 										}
 									</div>
-									<span >INR</span>
+									<span >MWK</span>
 								</div>
 							</div>
 							<div className="modal-footer">
