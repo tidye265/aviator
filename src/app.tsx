@@ -34,8 +34,8 @@ function App() {
             <div className="recharge-body-font">
               Insufficient balance amount
             </div>
-            <a href="https://induswin.com/#/pages/recharge/recharge">
-              Induswin.com
+            <a href="https://www.tidye265.com/deposit">
+              tidye265.com
             </a>
           </div>
         </div>
