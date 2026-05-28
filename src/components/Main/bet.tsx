@@ -379,21 +379,21 @@ const Bet = ({ index, add, setAdd }: BetProps) => {
 									<span>Number of Rounds:</span>
 									<div className="rounds-wrap">
 										<button
-											className={`btn-secondary ${autoCound === 10 ? "onClick" : ""}`}
+											className={`btn-secondary ${autoCound === 80 ? "onClick" : ""}`}
 											onClick={() => setCount(80)}>
 											80</button>
 										<button
-											className={`btn-secondary ${autoCound === 20 ? "onClick" : ""}`}
+											className={`btn-secondary ${autoCound === 160 ? "onClick" : ""}`}
 											onClick={() => setCount(160)}>
-											20</button>
+											160</button>
 										<button
-											className={`btn-secondary ${autoCound === 50 ? "onClick" : ""}`}
+											className={`btn-secondary ${autoCound === 1600 ? "onClick" : ""}`}
 											onClick={() => setCount(1600)}>
-											50</button>
+											1600</button>
 										<button
-											className={`btn-secondary ${autoCound === 100 ? "onClick" : ""}`}
+											className={`btn-secondary ${autoCound === 8000 ? "onClick" : ""}`}
 											onClick={() => setCount(8000)}>
-											100</button>
+											8000</button>
 									</div>
 								</div>
 								<div className="content-part">
