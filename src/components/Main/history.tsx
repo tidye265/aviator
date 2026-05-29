@@ -1,5 +1,5 @@
 import React from "react";
-// import { useCrashContext } from "./context";
+import { useCrashContext } from "./context";
 import Context from "../../context";
 
 export default function History() {
