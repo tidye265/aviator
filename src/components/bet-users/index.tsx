@@ -1,6 +1,6 @@
 import React from "react";
-// import { useCrashContext } from "../Main/context";
-// import { useEffect, useState } from "react";
+import { useCrashContext } from "../Main/context";
+import { useEffect, useState } from "react";
 import AllData from "./all-data";
 import MyBets from "./my-bets";
 import TopHistory from "./top-history";
@@ -8,7 +8,7 @@ import Context, { BettedUserType } from "../../context";
 
 export default function BetsUsers() {
   const { previousHand, bettedUsers, getMyBets } = React.useContext(Context);
-  // const [state, , , getMyBets] = useCrashContext();
+  const [state, , , getMyBets] = useCrashContext();
 
   const [headerType, setHeaderType] = React.useState("my");
   const [allData, setAllData] = React.useState<BettedUserType[]>([]);
@@ -64,7 +64,7 @@ export default function BetsUsers() {
             <TopHistory />
           )}
         </div>
-        {/* <div className="bets-footer">
+        <div className="bets-footer">
           <div className="provably-fair-block">
             <span>This game is </span>
             <div className="provably-fair">
@@ -78,7 +78,7 @@ export default function BetsUsers() {
               <div className="i-logo"></div>
             </a>
           </div>
-        </div> */}
+        </div> 
       </div>
     </div>
   );
