@@ -8,7 +8,7 @@ import Context from "./context";
 import propeller from "./assets/images/propeller.png";
 
 // ❗ IMPORTANT: fix import path
-import WebGLStarter from "./crash/index"; 
+import WebGLStarter from ".components/crash/index"; 
 
 function App() {
   const { unityLoading, currentProgress, rechargeState } =
